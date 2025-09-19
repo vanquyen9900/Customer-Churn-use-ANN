@@ -1,74 +1,57 @@
-📌 Customer Churn Prediction
-📖 Introduction
+# 📌 Customer Churn Prediction
 
-This project focuses on predicting customer churn based on customer behavior and demographic data.
-The main goal is to build a Machine Learning/Deep Learning model that can classify customers into two groups:
+## 📖 Introduction
+This project focuses on **predicting customer churn** based on customer behavior and demographic data.  
+The main goal is to build a Machine Learning/Deep Learning model that can classify customers into two groups:  
+- **Churn (customers who leave the service)**  
+- **Non-Churn (customers who stay with the service)**  
 
-Churn (customers who leave the service)
+## ⚙️ Technologies Used
+- **Python**  
+- **Pandas, NumPy** – Data manipulation  
+- **Matplotlib, Seaborn** – Data visualization  
+- **Scikit-learn** – Data preprocessing & evaluation metrics  
+- **TensorFlow / Keras** – Neural network modeling  
+- **Callbacks (EarlyStopping)** – Prevent overfitting  
 
-Non-Churn (customers who stay with the service)
+## 📊 Workflow
+1. **Exploratory Data Analysis (EDA)**  
+   - Load and inspect data using `pandas`  
+   - Explore feature distributions and their relationship with churn  
+   - Visualize trends using `matplotlib` and `seaborn`  
 
-⚙️ Technologies Used
+2. **Data Preprocessing**  
+   - Normalize features with `MinMaxScaler`  
+   - Split dataset into training and testing sets (80/20)  
 
-Python
+3. **Model Building**  
+   - Build a Neural Network with Keras (`Dense layers`, `sigmoid` activation for output)  
+   - Apply **EarlyStopping** to stop training when validation performance stops improving  
 
-Pandas, NumPy – Data manipulation
+4. **Model Training**  
+   - Train on the training set  
+   - Evaluate on the test set  
 
-Matplotlib, Seaborn – Data visualization
+5. **Model Evaluation**  
+   - Use **Confusion Matrix** and **Classification Report**  
+   - Metrics: Accuracy, Precision, Recall, F1-score  
 
-Scikit-learn – Data preprocessing & evaluation metrics
+## 🚀 How to Run
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/yourusername/customer_churn.git
+   cd customer_churn
+   ```
+2. Install dependencies:  
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Open Jupyter Notebook and run:  
+   ```bash
+   jupyter notebook customer_churn.ipynb
+   ```
 
-TensorFlow / Keras – Neural network modeling
-
-Callbacks (EarlyStopping) – Prevent overfitting
-
-📊 Workflow
-
-Exploratory Data Analysis (EDA)
-
-Load and inspect data using pandas
-
-Explore feature distributions and their relationship with churn
-
-Visualize trends using matplotlib and seaborn
-
-Data Preprocessing
-
-Normalize features with MinMaxScaler
-
-Split dataset into training and testing sets (80/20)
-
-Model Building
-
-Build a Neural Network with Keras (Dense layers, sigmoid activation for output)
-
-Apply EarlyStopping to stop training when validation performance stops improving
-
-Model Training
-
-Train on the training set
-
-Evaluate on the test set
-
-Model Evaluation
-
-Use Confusion Matrix and Classification Report
-
-Metrics: Accuracy, Precision, Recall, F1-score
-
-🚀 How to Run
-
-Clone the repository:
-
-git clone https://github.com/yourusername/customer_churn.git
-cd customer_churn
-
-
-Install dependencies:
-
-pip install -r requirements.txt
-
-
-Open Jupyter Notebook and run:
-
-jupyter notebook customer_churn.ipynb
+## 📌 Expected Results
+- Visualizations of churn distribution and feature relationships  
+- A predictive churn model with accuracy around **80–90%** (depending on data and tuning)  
+- Detailed performance metrics and evaluation report  
